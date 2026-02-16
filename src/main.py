@@ -2,5 +2,9 @@ def sum_numbers(a, b):
     return a + b
 
 
-print("Hello, Git!")
-print("Sum of 5 and 3 is:", sum_numbers(5, 3))
+try:
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+    print("Result:", sum_numbers(a, b))
+except ValueError:
+    print("Please enter valid numbers.")
